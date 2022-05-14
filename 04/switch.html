@@ -10,6 +10,16 @@
 <body>
 	<script>
 		var session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인", "1");
+
+		switch(session) {
+			case "1" : document.write("<p>marketing session holding at <strong>Room 201</strong></p>");
+		    break;
+			case "2" : document.write("<p>development session holding at <strong>Room 203</strong></p>");
+		    break;
+			case "1" : document.write("<p>design session holding at <strong>Room 205</strong></p>");
+		    break;
+		default: alert("wrong input");
+		}
 		
 	</script>
 </body>

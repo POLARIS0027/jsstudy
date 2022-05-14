@@ -25,5 +25,14 @@
 		</ul>
 		<div id="showResult"></div>	
 	</div>	
+	<script>
+		function showPrice( ) {
+			var originPrice = document.querySelector("#oPrice").value;
+			var rate = document.querySelector("#rate").value;
+			var savedPrice = originPrice * (rate / 100);
+			var resultPrice = originPrice - savedPrice;
+			document.querySelector("#showResult").innerHTML = "Original price is " + originPrice + "and discount rate is " + rate + "%. " + savedPrice + " discounted so " + resultPrice + " is last price";
+		}
+	</script>
 </body>
 </html>

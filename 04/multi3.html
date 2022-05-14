@@ -9,5 +9,21 @@
 </head>
 <body>
 	<div id="result"></div>
+	<script>
+		var userNumber = prompt("input number");
+		var displayArea = document.querySelector('#result');
+
+		if(userNumber != null) {
+			if (userNumber % 3 === 0 ) {
+				displayArea.innerHTML = userNumber + "is 3's multiplier"
+			}
+			else {
+				displayArea.innerHTML = userNumber + " is not 3's multiplier"
+			}
+		}
+		else {
+			alert("input is canceled");
+		}
+	</script>
 </body>
 </html>

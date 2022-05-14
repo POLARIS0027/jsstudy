@@ -10,6 +10,13 @@
 <body>	
 	<button class="btn" onclick="calc()">나이 계산하기</button>
 	<div id="result" class="show">(결과 값 표시)</div>
-
+<script>
+	function calc( ) {
+		var currentYear =prompt("insert current year","YYYY");
+		var birthYear = prompt("insert your birth year","YYYY");
+		var age = currentYear - birthYear +1;
+		document.querySelector("#result").innerHTML = "You Age is " + age;
+	}
+</script>
 </body>
 </html>
